@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM Example</title>
+    <style>
+        .div-cls {
+        width: 120px;
+        height: 120px;
+        background: pink;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .paragraph-style{
+        color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="one">Id Selector</h1>
+    <h1 id="one">Id Selector Copy</h1>
+
+    <h1 class="className">This is First className Element</h1>
+    <h1 class="className">This is Secound className Element</h1>
+
+    <h1 id="getElementById">Get Element By Id Example</h1>
+
+    <h1 id="getElementById">my content</h1>
+    <input type="text" value="06" name="age">
+    <input type="text" value="07" name="age">
+    <p>this is paragraph</p>
+
+    <a href="https://javatpoint.com">click here</a>
+    <button class="btn">click btn</button>
+    <div class="div-cls">
+        this is div
+    </div>
+    <button onclick="hideDiv()">Hide Div</button> 
+    <button onclick="showDiv()">Show Div</button> 
+    <div class="container">
+        <p class="rmv">we will remove this paragraph</p>
+        <p>this is paragraph where we create and remove elements</p>
+        <h1>Hello<p>Nested p</p></h1>
+    </div>
+
+    <div class="example">
+        <p>This is <strong>Paragraph</strong> right</p>
+    </div>
+
+    <div id="parent">
+        <p>Existing child 1</p>
+        <p id="existing">Existing child 2</p>
+      </div>
+
+</body>
+<script src="dom_example.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">Click me!</div>
+    </div>
+    <a href="https://udchalo.com" onClick="myClick()">Click here</a>    
+</body>
+<script>
+    const parent = document.getElementById('parent');
+const child = document.getElementById('child');
+
+// By Passing useCapture true
+parent.addEventListener('click', function() {
+  console.log('Capturing Phase : Parent');
+  event.stopPropagation();
+}, true);
+
+parent.addEventListener('click', function() {
+  console.log('Bubbling Phase : Parent');
+});
+
+child.addEventListener('click', function() {
+  console.log('Child clicked');
+  // event.stopPropagation();
+});
+
+function myClick(event) {
+    event.preventDefault()
+}
+
+</script>
+</html>
